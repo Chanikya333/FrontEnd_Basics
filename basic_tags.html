@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- General tags-->
+    <title>Document</title>
+    <h1>Hello world!</h1>
+    <h2>Hello world!</h2>
+    <h3>Hello world!</h3>
+    <h4>Hello world!</h4>
+    <h5>Hello world!</h5>
+    <h6>Hello world!</h6>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <article>
+        <h1>This is an article</h1>
+        <p>This is a paragraph in an article.</p>
+    </article>
+    <aside>
+        <h1>This is an aside</h1>
+        <p>This is a paragraph in an aside.</p>
+    </aside>
+    <p>This is a paragraph.</p>
+    <caption><b>Student Report card</b></caption><br><br>
+    <!--Media tags-->
+    <img src="image.jpg" alt="Description of image" width="500" height="300">
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!--table tags-->
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Max Marks</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td rowspan="5">John</td>
+            <td>Math</td>
+            <td>90</td>
+            <td>100</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>85</td>
+            <td>100</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>88</td>
+            <td>100</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>80</td>
+            <td>100</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td>95</td>
+            <td>100</td>
+            <td>A</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="5">Percentage: 87.5% </td>
+            </tr>
+    </table>
+
+    <!--list tags-->
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt>Term 1
+        <dd>Definition for term 1</dd>
+
+        </dt>
+        <dt>Term 2
+        <dd>Definition for term 2</dd>
+        </dt>
+    </dl>
+
+    <!--practice-->
+    <ul>
+        <li>Java
+            <ol>
+                <li>Spring</li>
+                <li>Hibernate</li>
+            </ol>
+        </li>
+        <li>python
+            <ol>
+                <li>Django</li>
+                <li>Flask</li>
+            </ol>
+        </li>
+        <li>C#
+            <ol>
+                <li>.NET</li>
+                <li>ASP.NET</li>
+            </ol>
+        </li>
+    </ul>
+    <!--form tags-->
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="mobile">Mobile:</label>
+        <input type="tel" name="mobile" id="mobile" required pattern="[0-9]{10}"
+            placeholder="please enter your mobile number of 10 digitss">
+        <button type="submit">Submit</button>
+    </form>
+    <!--form tags practicing-->
+    <h2>Course Registration Form</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for="firstname">First Name:</label></td>
+                    <td><input type="text" name="name" id="firstname" placeholder="EX:Jhon"></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname Name:</label></td>
+                    <td><input type="text" name="surname" id="name" placeholder="EX:David"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="mobile">Mobile Number:</label></td>
+                    <td><input type="tel" name="mobile" id="mobile" placeholder="EX:896-541-2378"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="EX:jhondavid@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="text" name="password" id="password" placeholder="Min 5 characters"></td>
+                </tr>
+                <tr>
+                    <td><label for="cpassword">Confirm password:</label></td>
+                    <td><input type="text" name="cpassword" id="cpassword" placeholder="Min 5 characters"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" name="male" id="gender">Male
+                        <input type="radio" name="female" id="gender">Female
+                        <input type="radio" name="others" id="gender">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Select Country:</label></td>
+                    <td>
+                        <select name="country" id="country">
+
+                            <optgroup label="Asia">
+                                <option value="india">India</option>
+                                <option value="japan">Japan</option>
+                                <option value="china">China</option>
+                                <option value="south_korea">South Korea</option>
+                                <option value="singapore">Singapore</option>
+                            </optgroup>
+
+                            <optgroup label="Europe">
+                                <option value="uk">United Kingdom</option>
+                                <option value="germany">Germany</option>
+                                <option value="france">France</option>
+                                <option value="italy">Italy</option>
+                                <option value="spain">Spain</option>
+                            </optgroup>
+
+                            <optgroup label="North America">
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="mexico">Mexico</option>
+                            </optgroup>
+
+                            <optgroup label="Australia & Oceania">
+                                <option value="australia">Australia</option>
+                                <option value="new_zealand">New Zealand</option>
+                            </optgroup>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pic">Upload Picture:</label></td>
+                    <td><input type="file" name="pic" id="pic"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td>Select course</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="course">
+                            <option value="java">Java</option>
+                            <option value="java">Python</option>
+                            <option value="java">C#</option>
+                            <option value="java">Go</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delivery Mode:</td>
+                    <td><input type="checkbox" value="offline">Offline</td>
+                    <td><input type="checkbox" value="online">Online</td>
+                </tr>
+                <tr>
+                    <td>Comments:</td>
+                </tr>
+                <tr>
+                    <td><textarea rows="4" cols="10"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
