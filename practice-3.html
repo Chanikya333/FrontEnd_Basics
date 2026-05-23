@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="practice-3.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Your Course Landing Page</h1>
+        <form action="/clp">
+            <div>
+                <label for="name">Course Title:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="disc">Course Description</label><br>
+                <textarea id="disc" name="course" rows="10" cols="32"></textarea>
+            </div>
+            <div>
+                <label for="level">Skill Level:</label>
+                <select id="level" name="level">
+                    <option value="beginner">Beginner level</option>
+                    <option value="intermediate">Intermediate level</option>
+                    <option value="advanced">Advanced level</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div>
+                <label for="publish">Ready to publish the course?</label>
+                <input type="checkbox" id="publish" name="publish">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>
